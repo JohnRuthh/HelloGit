@@ -11,7 +11,7 @@ using namespace sf;
 int main()
 {
 
-    ///Sta³e
+    ///StaÂ³e
 
     const int maxPlayerSpeed = 8;
     ///losowe liczy
@@ -21,7 +21,7 @@ int main()
     RenderWindow window(VideoMode(800,600,32),"Pong!");
     window.setFramerateLimit(60);
 
-    ///Zmienne Okreœlaj¹ce Stany
+    ///Zmienne OkreÅ“lajÂ¹ce Stany
 
         bool ballMoving = false;
         bool goRight = false;
@@ -48,7 +48,7 @@ int main()
     enemy.setPosition(400,20);
     enemy.setFillColor(Color(200,100,0));
 
-    ///Pi³ka
+    ///PiÂ³ka
 
     CircleShape ball;
     ball.setRadius(21);
@@ -57,13 +57,13 @@ int main()
 
 
 
-    ///Pêtla
+    ///PÃªtla
 
     while(window.isOpen())
     {
         Event event;
 
-        ///Sprawdzanie Eventów
+        ///Sprawdzanie EventÃ³w
         while(window.pollEvent(event))
         {
             if(event.type == Event::Closed)
@@ -71,7 +71,7 @@ int main()
                 window.close();
             }
 
-            ///Sterowanie ( Jeœli Event jest przyciskiem z klawiatury )
+            ///Sterowanie ( JeÅ“li Event jest przyciskiem z klawiatury )
             if(event.type == Event::KeyPressed)
             {
                 if(event.key.code == Keyboard::A)
@@ -123,7 +123,7 @@ int main()
         else if(goRight && player.getPosition().x < 700)
             player.move(maxPlayerSpeed,0);
 
-        ///Ruch przeciwnika w kierunku pi³ki
+        ///Ruch przeciwnika w kierunku piÂ³ki
 
         if(ballMoving)
         {
@@ -138,7 +138,7 @@ int main()
         }
 
 
-        ///Zachowanie pi³ki
+        ///Zachowanie piÂ³ki
 
         if(!ballMoving)
             ball.setPosition(player.getPosition().x, 530);
@@ -176,5 +176,5 @@ int main()
 
         window.display();
     }
-    return 0;
+    return 1;
 }
