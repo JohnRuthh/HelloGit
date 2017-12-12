@@ -1,5 +1,3 @@
-# HelloGit
-
 Ziggy played guitar, jamming good with Weird and Gilly 
 The spiders from Mars. He played it left hand 
 But made it too far 
